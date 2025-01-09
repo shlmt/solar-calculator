@@ -146,9 +146,12 @@ button:hover:enabled {
 }
 
 footer {
+    color: gray;
     text-align: center;
     margin-top: 30px;
     font-size: 14px;
+    display: flex;
+    justify-content: center;
 }
 
 footer a {
@@ -158,4 +161,10 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.footer-separator {
+    border-left: 1px solid rgba(0, 0, 0, 0.181); /* קו אנכי עדין */
+    height: 20px;
+    margin: 10px 20px;
 }
