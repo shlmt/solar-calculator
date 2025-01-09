@@ -1,3 +1,11 @@
+const imagesToPreload = ["analytics","building","buy-a-house","clouds",
+    "home","mixer-truck","solar-battery","solar-panel","sun","sunrise","weather"];
+
+imagesToPreload.forEach(src => {
+    const img = new Image();
+    img.src = "assets/"+src+".gif";
+});
+
 const form = document.getElementById('solarForm');
 const submitButton = document.getElementById('submitButton');
 
