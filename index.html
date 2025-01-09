@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>מחשבון סולארי -כמה הגג שלך שווה?</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <link rel="shortcut icon" href="assets/solar-energy.jpg">
+</head>
+<body>
+    <div class="container">
+        <h1>מחשבון סולארי</h1>
+        <form id="solarForm">
+            <label>סוג מבנה</label>
+            <div class="options" id="buildingTypeOptions">
+                <div class="option" data-value="ביתי">
+                    <img src="assets/home.jpg" alt="ביתי">
+                    <span>ביתי</span>
+                </div>
+                <div class="option" data-value="מסחרי">
+                    <img src="assets/building.jpg" alt="מסחרי">
+                    <span>מסחרי/תעשייה</span>
+                </div>
+            </div>
+
+            <label>סוג הגג</label>
+            <div class="options" id="roofTypeOptions">
+                <div class="option" data-value="רעפים">
+                    <img src="assets/solar-battery.jpg" alt="רעפים">
+                    <span>רעפים</span>
+                </div>
+                <div class="option" data-value="בטון">
+                    <img src="assets/mixer-truck.jpg" alt="בטון">
+                    <span>בטון</span>
+                </div>
+                <div class="option" data-value="איסכורית">
+                    <img src="assets/roofing.png" alt="איסכורית">
+                    <span>איסכורית</span>
+                </div>
+            </div>
+
+            <label for="roofArea">שטח גג משוער (מ"ר)</label>
+            <input type="number" id="roofArea" name="roofArea" min="50" required>
+
+            <label>הצללה</label>
+            <div class="options" id="shadeOptions">
+                <div class="option" data-value="אין">
+                    <img src="assets/sun.jpg" alt="אין הצללה">
+                    <span>אין</span>
+                </div>
+                <div class="option" data-value="מעט">
+                    <img src="assets/sunrise.jpg" alt="מעט הצללה">
+                    <span>מעט</span>
+                </div>
+                <div class="option" data-value="הרבה">
+                    <img src="assets/clouds.jpg" alt="הרבה הצללה">
+                    <span>הרבה</span>
+                </div>
+            </div>
+
+            <button type="submit" id="submitButton" disabled>חשב</button>
+        </form>
+
+        <div class="results" id="results" style="display: none;">
+            <h2>כמה הגג שלך שווה?</h2>
+            <div class="res-container">
+                <div class="result-item">
+                    <img src="assets/solar-panel.jpg" alt="גודל מערכת">
+                    <strong>גודל מערכת משוער:</strong>
+                    <span id="systemSize">--</span>
+                </div>
+                <div class="result-item">
+                    <img src="assets/buy-a-house.jpg" alt="צפי הכנסות">
+                    <strong>צפי הכנסות בשנה:</strong>
+                    <span id="annualRevenue">--</span>
+                </div>
+                <div class="result-item">
+                    <img src="assets/analytics.jpg" alt="תשואה שנתית">
+                    <strong>תשואה שנתית:</strong>
+                    <span id="roi">--</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><a href="https://www.flaticon.com/free-animated-icons/real-estate" target="_blank">Real estate animated icons created by Freepik - Flaticon</a></p>
+    </footer>
+
+</body>
+<script src='index.js'></script>
+</html>
